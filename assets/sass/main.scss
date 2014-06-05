@@ -1,0 +1,36 @@
+/* ==========================================================================
+   main.scss
+   --------------------------------------------------------------------------
+   * Use this file to import your .scss files.
+   * All imported files will be compiled into main.css file when running grunt
+   * Pliny institutes a *very* basic .scss directory structure roughly based on
+     the one featured here http://thesassway.com/beginner/how-to-structure-a-sass-project
+     but can be easily be modified
+   ========================================================================== */
+
+// Neat helper variable for development
+// $visual-grid: true;
+
+
+// Normalize
+@import "vendor/normalize";
+
+// Bourbon/Neat for lightweight grid and mixins
+@import "bourbon/bourbon";
+@import "bitters/bitters";
+// for adjusting default grid settings, edit in below partial
+@import "grid-settings";
+@import "neat/neat";
+
+
+// Modules and Variables
+@import "partials/base";
+@import "partials/typography";
+
+// Partials
+@import "partials/typography";
+@import "partials/layout";
+@import "partials/social";
+
+
+

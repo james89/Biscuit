@@ -1,0 +1,104 @@
+
+body {
+  border: 12px solid $dark-gray;
+  min-height: 100%;
+  padding-bottom: em(10);
+}
+
+
+/* SITE HEADER */
+
+#site-head {
+  @include outer-container;
+  margin-bottom: 5em;
+
+  #site-head-content {
+    @include span-columns(12);
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: em(100);
+    padding-bottom: em(100);
+    height: em(350);
+    border-bottom: 3px solid $light-green-2;
+  }
+
+}
+
+
+
+
+/* CONTENT and POSTS */
+
+main {
+  @include outer-container;
+  padding-top: em(20);
+
+  p {
+    margin: em(8);
+  }
+
+
+  article {
+    @include span-columns(12);
+    @include row();
+    margin-bottom: 5em;
+    margin-top: 4em;
+
+    .post-title {
+      margin: em(10);
+    }
+
+    .post-header {
+      text-align: center;
+      margin-bottom: em(50);
+    }
+
+    .post-footer {
+      text-align: center;
+      margin-top: em(30);
+    }
+
+
+  }
+
+  .pagination {
+    @include span-columns(12);
+    @include row();
+    text-align: center;
+  }
+
+}
+
+.post-header-2 {
+      margin: em(10);
+}
+
+    .post-title-2 {
+      margin-left: em(8);
+      margin-right: em(10);
+      padding-bottom: em(5);
+      border-bottom: 1px solid #ddd;
+    }
+
+
+
+
+/* SITE FOOTER */
+
+
+
+
+.site-footer {
+
+  @include outer-container;
+  padding-top: em(10);
+  font-size: 80%;
+
+  .container {
+      @include span-columns(12);
+
+
+  }
+
+}
+

@@ -1,0 +1,12 @@
+  .social-nav {
+    padding-top: em(20);
+    i {
+      color: $light-gray;
+      margin: em(5);
+    }
+
+    i:hover {
+      color: $light-green-2;
+      @include transition(color, 1.5s);
+    }
+  }

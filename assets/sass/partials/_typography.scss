@@ -1,0 +1,64 @@
+/* Specific fonts can be changed within /Bitters/variables */
+
+.blog-title {
+  letter-spacing: em(3.5);
+  font-size: em(40);
+}
+
+.blog-description {
+  letter-spacing: em(2);
+  font-size: em(13);
+  color: $medium-gray;
+  padding-top: em(20);
+  font-weight: 300;
+}
+
+
+.post-title {
+  letter-spacing: em(1.5);
+    text-transform: uppercase;
+
+  a {
+    color: lighten(#545454,10);
+  }
+  a:hover {
+    color: darken(#545454, 15);
+  }
+}
+
+.post-time {
+  font-style: italic;
+  letter-spacing: em(1);
+  text-transform: uppercase;
+  font-family: $header-font-family;
+  color: darken(#545454, 15);
+  font-size: 70%;
+}
+
+.post-footer {
+  text-align: center;
+  letter-spacing: em(1.5);
+  font-size: 80%;
+}
+
+main article .post-footer {
+
+  font-weight: 300;
+}
+
+.site-footer {
+  text-align: center;
+}
+
+
+
+
+
+hr.faded {
+    @include span-columns(10);
+    @include shift(1);
+    @include linear-gradient(left, rgba(0,0,0,0), rgba(153, 153, 153, .65), rgba(0,0,0,0));
+    border: none;
+    height: em(1);
+    margin-top: em(5);
+}
