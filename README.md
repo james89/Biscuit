@@ -28,3 +28,4 @@ Biscuit requires:
 ### To do
 * Further styling for images, lists
 * Disqus commenting system
+* Footer styling
